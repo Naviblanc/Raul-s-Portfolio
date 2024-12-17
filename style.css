@@ -944,3 +944,79 @@ footer a i {
 
 
 
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        background: var(--secon-bg-color);
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: var(--neon-box-shadow);
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon */
+    }
+
+    .navlist.active {
+        display: flex; /* Show nav items when active */
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .btn-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-image {
+        display: none; /* Hide large images on small screens */
+    }
+
+    .about,
+    .skills,
+    .section-services {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+}
+
+
+/* Tablet Screens */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navlist a {
+        padding: 10px;
+    }
+
+    .home {
+        grid-gap: 2em;
+    }
+
+    .home-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-image .img-box img {
+        max-width: 200px; /* Adjust image size */
+    }
+}
